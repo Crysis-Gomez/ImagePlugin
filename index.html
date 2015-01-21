@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>
+			image plugin
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="imageplugin.js"></script>
+	</head>
+		<div id="img_container">
+				
+		    <img src="/jerrygomez.nl/images/construction1.png">
+		  	<img src="/jerrygomez.nl/images/construction2.png">
+		    <img src="/jerrygomez.nl/images/construction3.png">
+		    <img src="/jerrygomez.nl/images/construction4.png">
+		    <img src="/jerrygomez.nl/images/construction5.png">
+		    <img src="/jerrygomez.nl/images/construction6.png">
+ 
+		</div>
+	</body>
+	<style>
+	#img_container {
+	    display:block;
+	    width: 100%;
+	    min-height: 300px;
+
+	}
+	
+	#img_container img {
+	    position:absolute;
+	    opacity:0;
+	    left: 50px;
+	    right: 50px;
+	    margin: auto;
+	}
+
+	body{
+		background:#000;
+	}
+
+	</style>
+	<script type="text/javascript">
+	$('#img_container').rotator(100, 'img');
+	</script>
+</html>
+
+
